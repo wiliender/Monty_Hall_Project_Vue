@@ -1,16 +1,16 @@
 <template>
     <div id="app">
         <h1>Problema de Monty Hall</h1>
-        <Gift />
+        <Door number="1" :hasGift="false" /><!-- : para passar o segundo parametro falso como boolean, sem os : passa como string -->
     </div>
 </template>
 
 <script>
-import Gift from "./components/Gift";
+import Door from "./components/Door";
 export default {
     nome: "App",
     components: {
-        Gift
+        Door
     }
 
 }
